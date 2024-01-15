@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skilline - Online Learning Platform</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+  </head>
+  <body class="font-poppins bg-white">
+    <header class="p-4">
+      <div class="container mx-auto flex items-center justify-between">
+        <a href="./index.html"
+          ><div class="logo">
+            <img
+              class="logoImg"
+              src="./assets/logo.png"
+              alt="Skilline Logo"
+            /></div
+        ></a>
+        <nav class="hidden md:flex items-center space-x-4">
+          <a href="./index.html">Home</a>
+          <a href="#">Courses</a>
+          <a href="#">Blog</a>
+          <a href="#About">About Us</a>
+          <a href="#" class="cta-btn login">Login</a>
+          <a href="#" class="cta-btn signup">Sign Up</a>
+        </nav>
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-800 focus:outline-none"
+          >
+            <svg
+              class="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            id="mobile-menu"
+            class="hidden absolute top-16 right-4 space-y-2"
+          >
+            <a href="./index.html">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Blog</a>
+            <a href="#">About Us</a>
+            <a href="#" class="cta-btn login">Login</a>
+            <a href="#" class="cta-btn signup">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="">
+      <section class="startingPage py-8">
+        <div class="container mx-auto">
+          <div class="parent">
+            <div class="div1" data-aos="fade-right">
+              <div>
+                <p class="studying-online-is">
+                  <span class="text-wrapper">Studying</span>
+                  <span class="span"> Online is now much easier</span>
+                </p>
+              </div>
+              <p class="mt-4 mb-4 info">
+                Skilline is an interesting platform that will teach you in more
+                an interactive way
+              </p>
+              <div class="flex items-center gap-8 mt-4 mb-4">
+                <a href="#" class="cta-btn signup">Join for free</a>
+                <div class="flex items-center">
+                  <!-- Circular play button with hover effect -->
+                  <a href="#" class="play-icon">
+                    <svg
+                      class="w-10 h-10 p-2 bg-blue-500 text-white rounded-full hover:bg-yellow-500 transition duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M5 3l14 9-14 9V3z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <!-- "Watch how it works" link -->
+                  <a href="#" class="ml-2 text-blue-500">Watch how it works</a>
+                </div>
+              </div>
+            </div>
+            <div class="div2" data-aos="fade-left">
+              <img class="Student" src="./assets/Student.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Companies Section -->
+      <section
+        class="companiesSection container mx-auto flex flex-col justify-center items-center py-8"
+        data-aos="fade-up"
+      >
+        <h2 class="text-2xl font-semibold mb-4 companyCon">
+          Trusted by 5,000+ Companies Worldwide
+        </h2>
+
+        <!-- Logos of the companies -->
+        <div class="flex items-center space-x-16 my-5 justify-center">
+          <img
+            src="./assets/google-logo.png"
+            alt="Google Logo"
+            class="company-logo"
+          />
+          <img
+            src="./assets/netflix-logo.png"
+            alt="Netflix Logo"
+            class="company-logo"
+          />
+          <img
+            src="./assets/airbnb-logo.png"
+            alt="AirBnB Logo"
+            class="company-logo"
+          />
+          <img
+            src="./assets/amazon-logo.png"
+            alt="Amazon Logo"
+            class="company-logo"
+          />
+          <img
+            src="./assets/facebook-logo.png"
+            alt="Facebook Logo"
+            class="company-logo"
+          />
+          <img
+            src="./assets/grab-logo.png"
+            alt="Grab Logo"
+            class="company-logo"
+          />
+        </div>
+      </section>
+      <section
+        class="text-center mt-8 container mx-auto mb-8"
+        data-aos="fade-up"
+      >
+        <h2 class="text-3xl font-semibold">
+          <span style="color: #2f327d">All-In-One Cloud</span>
+          <span style="color: #f48c06">Software</span>
+        </h2>
+
+        <p class="mx-16 mt-4">
+          Skilline is a powerful online software suite that combines all the
+          tools needed to run a successful school or office.
+        </p>
+
+        <!-- Three Cards -->
+        <div class="flex mt-8 justify-center space-x-8">
+          <!-- Card 1 -->
+          <div class="card bg-gradient-to-r from-blue-400 to-blue-500">
+            <div class="card-content">
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                Online Billing & Contracts
+              </h3>
+              <p class="text-gray-200">
+                Manage financial transactions and send customized invoices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card bg-gradient-to-r from-green-400 to-green-500">
+            <div class="card-content">
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                Scheduling & Attendance
+              </h3>
+              <p class="text-gray-200">
+                Schedule classrooms and keep detailed attendance records.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card bg-gradient-to-r from-yellow-400 to-yellow-500">
+            <div class="card-content">
+              <h3 class="text-xl font-semibold mb-2 text-white">
+                Customer Tracking
+              </h3>
+              <p class="text-gray-200">
+                Automate and track emails for effective organization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto mt-12" id="About" data-aos="fade-up">
+        <h2 class="text-3xl font-semibold text-center mb-8">About Us</h2>
+        <div
+          class="flex flex-col md:flex-row items-center justify-center space-x-4"
+        >
+          <!-- Text Content -->
+          <div class="md:w-1/2">
+            <p class="text-lg">
+              Skilline is a leading online learning platform committed to
+              providing high-quality education to learners around the world. Our
+              mission is to empower individuals to achieve their goals and
+              enhance their skills through interactive and personalized courses.
+            </p>
+            <p class="text-lg mt-4">
+              With a diverse range of courses designed by industry experts, we
+              strive to make learning an enjoyable and rewarding experience for
+              our users.
+            </p>
+          </div>
+
+          <!-- Image -->
+          <div class="md:w-1/2 flex justify-center">
+            <img
+              src="./assets/image 12.png"
+              alt="About Us Image"
+              class="w-100 h-auto"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="container mx-auto mt-12 mb-12" data-aos="zoom-in-down">
+        <h2 class="text-3xl font-semibold text-center mb-8">
+          Student Testimonials
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-600">
+              "Skilline has been a game-changer for me. The interactive courses
+              and personalized learning paths have significantly boosted my
+              skills and career."
+            </p>
+            <p class="text-gray-800 font-semibold mt-4">John Doe</p>
+            <p class="text-gray-500">Software Developer</p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-600">
+              "I love the flexibility Skilline offers. The diverse range of
+              courses allows me to explore different fields and expand my
+              knowledge."
+            </p>
+            <p class="text-gray-800 font-semibold mt-4">Jane Smith</p>
+            <p class="text-gray-500">Marketing Specialist</p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-600">
+              "The industry-relevant content provided by Skilline has helped me
+              stay updated and competitive in my field. Highly recommend it!"
+            </p>
+            <p class="text-gray-800 font-semibold mt-4">Alex Johnson</p>
+            <p class="text-gray-500">Data Scientist</p>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Us Section -->
+      <section
+        class="bg-gray-100 py-12"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
+          <p class="text-lg mb-8">
+            Have questions or suggestions? Feel free to reach out to us.
+          </p>
+          <a href="#" class="cta-btn signup">Contact Us</a>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="bg-gray-300 text-gray-700 py-8">
+      <div class="container mx-auto text-center">
+        <!-- Skilline Logo with Virtual Class for Zoom -->
+        <div class="flex items-center justify-center mb-4">
+          <img
+            class="logoImg"
+            src="./assets/logo-removebg.png"
+            alt="Skilline Logo"
+          />
+          <div class="border-l border-gray-700 h-6 mx-4"></div>
+          <!-- Vertical line -->
+          <p class="ml-2 text-sm">Virtual Class for Zoom</p>
+        </div>
+
+        <!-- Subscribe to our Newsletter -->
+        <p class="text-lg mb-2">Subscribe to our Newsletter</p>
+        <div class="flex items-center justify-center mb-4">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="rounded-l-full py-2 px-4 focus:outline-none"
+          />
+          <button class="bg-blue-500 text-white rounded-r-full px-6 py-2 ml-2">
+            Subscribe
+          </button>
+        </div>
+
+        <!-- Tabs: Careers, Privacy Policy, Terms & Conditions -->
+        <div class="flex justify-center space-x-8 mb-4">
+          <a href="#" class="text-gray-500 hover:text-gray-900">Careers</a>
+          <a href="#" class="text-gray-500 hover:text-gray-900"
+            >Privacy Policy</a
+          >
+          <a href="#" class="text-gray-500 hover:text-gray-900"
+            >Terms & Conditions</a
+          >
+        </div>
+
+        <!-- Copyright -->
+        <p class="text-sm">&copy; 2024 Skilline - All Rights Reserved</p>
+        <p class="mt-2 text-sm">Designed with ❤️ by Biraj Kc</p>
+
+        <!-- Class Technologies Inc. -->
+        <p class="mt-4 text-xs">Copyright 2021 Class Technologies Inc.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Toggle mobile menu visibility
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+    <script>
+      // Smooth scrolling when clicking on navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Duration of animation in milliseconds
+        easing: "ease-in-out", // Easing options: 'linear', 'ease', 'ease-in', 'ease-out', 'ease-in-out'
+        once: true, // Whether animation should happen only once - while scrolling down
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff; /* fff2e1 */
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+header {
+  width: 100%;
+  margin: 0 auto; /* Center the header within the viewport */
+  background-color: #fff2e1; /* Set background color for the header */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 140px;
+  height: 80px;
+  background-color: transparent; /* Set the background color of the image to transparent */
+}
+
+nav {
+  display: flex;
+  background-color: #fff2e1; /* Set background color for the navigation bar */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #2f327d;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 10px;
+  font-size: 18px;
+}
+nav a:hover {
+  color: #f48c06; /* Change the text color on hover */
+}
+/* Styling for Login button */
+.cta-btn {
+  text-align: center;
+  height: 50px;
+  width: 161px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0.44px;
+  line-height: normal;
+  border-radius: 80px;
+  box-shadow: 0px 20px 24px #00000008;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for smoother hover effect */
+}
+
+.cta-btn.login {
+  background-color: #ffffff;
+  color: #6c6c6c;
+  font-family: "Poppins-Medium", Helvetica;
+}
+
+.cta-btn.login:hover {
+  background-color: #6c6c6c; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+}
+
+/* Styling for Sign Up button */
+.cta-btn.signup {
+  background-color: #f48c06;
+  color: #ffffff;
+  font-family: "Poppins-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.44px;
+  line-height: normal;
+  border-radius: 80px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for smoother hover effect */
+}
+
+.cta-btn.signup:hover {
+  background-color: #e07b04; /* Change background color on hover */
+}
+
+.startingPage {
+  background-color: #fff2e1;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.studying-online-is {
+  width: 681px;
+  font-family: "Poppins-Bold", Helvetica;
+  font-weight: 700;
+  font-size: 54px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+.div1 .text-wrapper {
+  color: #f48c06;
+}
+.div1 .span {
+  color: #2f327d;
+}
+.div2 .Student {
+  width: 100%;
+  height: auto !important;
+}
+.div1 .info {
+  font-family: "Nunito Sans-Regular", Helvetica;
+  font-weight: 400;
+  color: #464646;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 38.4px;
+}
+.play-icon:hover {
+  color: #ff9900; /* Change color on hover */
+  cursor: pointer; /* Change cursor on hover */
+}
+/* Style for the company logos */
+.company-logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  object-fit: contain;
+}
+.companyCon {
+  font-family: "Poppins-Medium", Helvetica;
+  font-weight: 500;
+  color: #696983;
+  font-size: 22px;
+  letter-spacing: 0.56px;
+  line-height: 44.8px;
+  white-space: nowrap;
+}
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #2f327d, #f48c06);
+}
+
+
+/* Style for the Contact Us Section */
+.bg-gray-100 {
+  background-color: #f8f9fa; /* Light gray background */
+}
+.about-us-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style for the Testimonials Section */
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
